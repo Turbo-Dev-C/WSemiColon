@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-Black.ttf") format("truetype");
+}
+
+body
+{
+    background-color: white;
+    font-family: "Satoshi";
+    padding: 20px;
+}
+.box
+{
+    display: flex;
+    padding: 20px;
+    border: 1 solid black;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+button
+{
+    margin: 10px;
+    border: 0.005 solid black;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.2s;
+}
+button:hover
+{
+    transform: scale(1.2,1.2);
+}
