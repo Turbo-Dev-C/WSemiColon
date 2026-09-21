@@ -13,7 +13,7 @@ body
 {
     display: flex;
     padding: 20px;
-    border: 1 solid black;
+    border: none;
     background-color: white;
     justify-content: center;
     flex-direction: column;
@@ -22,12 +22,25 @@ body
 button
 {
     margin: 10px;
-    border: 0.005 solid black;
+    border: none;
     border-radius: 20px;
-    background-color: white;
+    background-color: black;
     transition: transform 0.2s;
+    width: 250px;
+    color: white;
 }
 button:hover
 {
     transform: scale(1.2,1.2);
+}
+pre {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    overflow-x: auto;
+}
+
+code {
+    font-family: monospace;
 }
