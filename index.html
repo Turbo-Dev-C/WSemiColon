@@ -1,9 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/jpg" href="tutorial/SemiColonPicture.jpg">
+    <style>
+        @font-face {
+    font-family: "Satoshi";
+    src: url("tutorial/Satoshi-Black.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    color: black;
+    background-color: white;
+    font-family: "Satoshi", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.upcadr
+{
+    display: flex;
+}
+
+.logo {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+h1 {
+    margin: 0 0 20px;
+    text-align: right;
+}
+
+p {
+    margin: 0;
+    text-align: right;
+}
+.buts
+{
+    display: flex;
+    justify-content: flex-end;
+}
+button
+{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.2s;
+    font-family: "Satoshi";
+}
+button:hover
+{
+    transform:scale(1.5,1.5);
+}
+    </style>
+    <title>SemiColon | Smart Build And Smart Publish</title>
 </head>
+
 <body>
-    <h1>Hello GitHub Pages!</h1>
+    <div class="upcadr">
+        <h1>SemiColon Website</h1>
+        <div class="butns">
+        <button style="background: none;color: black;border: none;" id="repo">Repository</button>
+        <button style="background: none;color: black;border: none;" id="Tutr">Tutorial</button>
+        <button style="background: none;color: black;border: none;" id="down">Download</button>
+        <a href="Source.zip" download>
+        <button style="background: none;color: black;border: none;" id="downsou">Download Source</button>
+        </a>
+        <button style="background: none;color: black;border: none;" id="sup">Support</button>
+        </div>
+    </div>
+    <div class="container">
+
+        <img class="logo" src="tutorial/SemiColonPicture.jpg">
+
+        <div class="text">
+            <h1>
+                SemiColon ;<br>
+                Easy Tool For CI/CD Smart Build And Smart Publish
+            </h1>
+
+            <p>
+                SemiColon Its A Easy Tool For Programmers For CI/CD And Smart Build And Publish<br>
+                This Tool Work With Terminal And Prompts<br>
+                Dont Have The Problem For Build And Test And Publish The Big Projects With SemiColon
+            </p>
+            <br>
+            <div class="buts">
+                <button>Get Start</button>
+                <button id="mtu">Tutorial</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
